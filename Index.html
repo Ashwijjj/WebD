@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance | Concert Booking</title>
+	<style>
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #222;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff3333;
+}
+
+/* Events Section */
+.events {
+    padding: 50px;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event {
+    background: #f4f4f4;
+    padding: 40px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.event img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event h3 {
+    margin: 15px 0 10px;
+}
+
+.event p {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Advance</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience Live Music Like Never Before</h1>
+            <p>Book your tickets for the hottest concerts and shows before others.</p>
+            <a href="#events" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event">
+                <img src="GreenPark.jpg" alt="Concert 1">
+                <h3>Rock Night</h3>
+                <p>Date: April 15, 2025</p>
+                <p>Location: Green Park Stadium, Kanpur</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="event">
+                <img src="CamaplGoa.jpg" alt="Concert 2">
+                <h3>Jazz Fest</h3>
+                <p>Date: May 22, 2025</p>
+                <p>Location: Campal Indoor Complex, Goa</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="event">
+                <img src="indira-gandhi-sports.jpg" alt="Concert 3">
+                <h3>EDM Explosion</h3>
+                <p>Date: June 10, 2025</p>
+                <p>Location: Indira Gandhi Arena, NCR</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Advance | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
